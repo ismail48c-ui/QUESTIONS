@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>JavaScript Interactive Projects</h1>
+
+    <!-- question1 -->
+    <section>
+        <h2>Question 1: Show the Box</h2>
+        <button onclick="showBox()">Show Box</button>
+
+        <div id="myBox" class="hidden-box">
+            <h3>Hello Student!</h3>
+            <p>The hidden box is now visible.</p>
+        </div>
+    </section>
+
+  <!-- question 2 -->
+    <section>
+        <h2>Question 2: Interactive Image</h2>
+
+        <img
+            src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600"
+            alt="Beautiful night sky"
+            id="myImage"
+            onmouseover="imageHover()"
+            onmouseout="imageNormal()"
+        >
+        <p>Move your mouse over the image!</p>
+    </section>
+
+    <!-- Question 3-->
+    <section>
+        <h2>Question 3: Notice Board</h2>
+
+        <p>Notice 1: Complete your homework on time.</p>
+        <p>Notice 2: Bring your books to class.</p>
+        <p>Notice 3: Keep your classroom clean.</p>
+        <p>Notice 4: Submit your assignments on Friday.</p>
+        <p>Notice 5: Attend classes regularly.</p>
+
+        <button onclick="highlightNotices()">Highlight Notices</button>
+    </section>
+
+    <!-- Question 4 -->
+    <section>
+        <h2>Question 4: Rules and Course Information</h2>
+
+        <div id="studentRules">
+            <h3>Student Rules</h3>
+            <p>Rule 1: Respect your teachers.</p>
+            <p>Rule 2: Arrive at school on time.</p>
+            <p>Rule 3: Follow classroom discipline.</p>
+        </div>
+
+        <button onclick="highlightRules()">Highlight Rules</button>
+
+        <div id="courseInfo">
+            <h3>Course Information</h3>
+            <p>Course 1: HTML</p>
+            <p>Course 2: CSS</p>
+            <p>Course 3: JavaScript</p>
+        </div>
+
+        <button onclick="highlightCourse()">Highlight Course</button>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
